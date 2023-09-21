@@ -118,6 +118,7 @@ input[type="submit"] {
 /* Hover effect for submit button */
 input[type="submit"]:hover {
   cursor: pointer;
+  color: azure;
 }
 
 /* FOOTER */
