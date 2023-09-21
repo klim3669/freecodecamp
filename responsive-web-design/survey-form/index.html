@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Product Feedback Survey Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1 id="title">Page Title</h1>
-        <p id="description">Short explanation what this page is about.</p>
+        <h1 id="title">Product Feedback Survey Form</h1>
+        <p id="description">Thank you for taking time to help us improve our product</p>
     </header>
     
     <main>
         <form action="" id="survey-form">
             <fieldset>
-                <label for="name" id="name-label">Name <input type="text" name="name" id="name" placeholder="Your name" required></label>
-                <label for="email" id="email-label">E-mail <input type="email" name="email" id="email" placeholder="Your e-mail" required></label>
-                <label for="number" id="number-label">Age <input type="number" name="number" id="number" min="12" max="100" placeholder="Your age"></label>
+                <label for="name" id="name-label">Name <input type="text" name="name" id="name" placeholder="Enter your name" required></label>
+                <label for="email" id="email-label">E-mail <input type="email" name="email" id="email" placeholder="Enter your e-mail" required></label>
+                <label for="number" id="number-label">Age &nbsp;<small>(optional)</small> <input type="number" name="number" id="number" min="12" max="100" placeholder="How old are you"></label>
             </fieldset>
             <fieldset>
-                <label for="dropdown">Dropdown
+                <label for="dropdown">How did you hear about our product?
                     <select name="dropdown" id="dropdown">
-                        <option value="">(select option)</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
+                        <option value="">Select the appropriate</option>
+                        <option value="1">E-mail</option>
+                        <option value="2">Social media</option>
+                        <option value="3">Advertisement</option>
+                        <option value="4">Search engine</option>
+                        <option value="5">Friends</option>
+                        <option value="6">Other</option>
                     </select>
                 </label>
             </fieldset>
             <fieldset>
-                <p>Some text</p>
-                <label for="radio1"><input type="radio" name="radio" id="radio1" value="1"> Radio 1</label>
-                <label for="radio2"><input type="radio" name="radio" id="radio2" value="2"> Radio 2</label>
+                <p>Did you purchase our product?</p>
+                <label for="radio1"><input type="radio" name="radio" id="radio1" value="1"> Yes</label>
+                <label for="radio2"><input type="radio" name="radio" id="radio2" value="2"> No</label>
+                <label for="radio3"><input type="radio" name="radio" id="radio3" value="3"> Still thinking</label>
             </fieldset>
             <fieldset>
-                <p>Some text</p>
-                <label for="checkbox1"><input type="checkbox" name="checkbox1" id="checkbox1" value="1"> Checkbox 1</label>
-                <label for="checkbox2"><input type="checkbox" name="checkbox2" id="checkbox2" value="2"> Checkbox 2</label>
-                <label for="checkbox3"><input type="checkbox" name="checkbox3" id="checkbox3" value="3"> Checkbox 3</label>
+                <p>Which platform do you use?</p>
+                <label for="checkbox1"><input type="checkbox" name="checkbox1" id="checkbox1" value="1"> Mac OS</label>
+                <label for="checkbox2"><input type="checkbox" name="checkbox2" id="checkbox2" value="2"> Windows</label>
+                <label for="checkbox3"><input type="checkbox" name="checkbox3" id="checkbox3" value="3"> Linux</label>
+                <label for="checkbox4"><input type="checkbox" name="checkbox4" id="checkbox4" value="4"> Other</label>
             </fieldset>
             <fieldset>
-                <label for="comments">Comments
-                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your comments here..."></textarea>
+                <label for="comments">Comments &nbsp;<small>(optional)</small>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Let us know if you have any comments or suggestions..."></textarea>
                 </label>
             </fieldset>
             <input type="submit" value="Submit" id="submit">
