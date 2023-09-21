@@ -1,114 +1,139 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
+/* Reset some default styles for the body */
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    background-image: linear-gradient(
-        0deg,
-        rgba(24, 26, 32, 0.7),
-        rgba(24, 26, 32, 0.7)
-    ), url('img/dark_glitter_flecks.jpeg');
-    color: #EBEBEB;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.1rem;
-  }
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  color: #EBEBEB;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  /* Create a background gradient with an image overlay */
+  background-image: linear-gradient(
+    0deg,
+    rgba(24, 26, 32, 0.7),
+    rgba(24, 26, 32, 0.7)
+  ), url('img/dark_glitter_flecks.jpeg');
+}
 
-  header, main, footer {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 700px;
-    min-width: 300px;
-  }
-  
-  h1 {
-    margin: 1em auto 0 auto;
-    text-align: center;
-    font-family: 'Muli', sans-serif;
-  }
+/* HEADER */
 
-  header p {
-    margin: 1em auto 2em auto;
-    text-align: center;;
-  }
-  
-  form {
-    margin: 0 auto;
-    padding: 3em;
-    background-color: rgba(40, 55, 71, 0.7);
-    border-radius: 10px;
-  }
-  
-  fieldset {
-    border: none;
-    padding: 0rem;
-  }
-  
-  label {
-    display: block;
-    margin: 0;
-  }
-  
-  input, textarea, select {
-    width: 100%;
-    height: 2.4em;
-    margin: 10px 0 25px 0;
-    padding: 0.5em;
-    background-color: #EBEBEB;
-    font-size: 1rem;
-    border: 0;
-    border-radius: 5px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+/* Define styles for header, main content, and footer */
+header, main, footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  min-width: 300px;
+}
 
-  fieldset:has(input[type="checkbox"]) {
-    margin: 0.7em auto 1.7em auto;
-  }
+/* Style for main heading */
+h1 {
+  margin: 1em auto 0 auto;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+}
 
-  label:has(input[type="radio"]), label:has(input[type="checkbox"]) {
-    margin: 0 0 0.5em 0;
-  }
+/* Style for paragraphs inside the header */
+header p {
+  margin: 1em auto 2em auto;
+  text-align: center;
+}
 
-  input[type="radio"], input[type="checkbox"] {
-    width: unset;
-    height: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-  }
+/* FORM */
 
-  textarea {
-    height: 8em;
-  }
-  
-  input[type="submit"] {
-    display: block;
-    width: 60%;
-    min-width: 300px;
-    margin: 1em auto 0 auto;
-    padding: 0;
-    height: 2em;
-    background-color: #6495ED;
-    color: #EBEBEB;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-  }
+/* Style for forms */
+form {
+  margin: 0 auto;
+  padding: 3em;
+  background-color: rgba(40, 55, 71, 0.7);
+  border-radius: 10px;
+}
 
-  input[type="submit"]:hover {
-    cursor: pointer;
-  }
+/* Remove default styles for fieldset */
+fieldset {
+  border: none;
+  padding: 0;
+}
 
-  footer {
-    padding: 2em 0;
-    text-align: center;
-  }
+/* Reset styles for labels */
+label {
+  display: block;
+  margin: 0;
+}
 
-  a, a:visited {
-    color: #EBEBEB;
-  }
+/* Style for input, textarea, and select elements */
+input, textarea, select {
+  width: 100%;
+  height: 2.4em;
+  margin: 10px 0 25px 0;
+  padding: 0.5em;
+  background-color: #EBEBEB;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-  a:hover, a:active {
-    color: #6495ED;
-  }
+/* Margin adjustment for fieldset containing checkboxes */
+fieldset:has(input[type="checkbox"]) {
+  margin: 0.7em auto 1.7em auto;
+}
+
+/* Margin adjustment for labels containing radio buttons or checkboxes */
+label:has(input[type="radio"]), label:has(input[type="checkbox"]) {
+  margin: 0 0 0.5em 0;
+}
+
+/* Reset styles for radio buttons and checkboxes */
+input[type="radio"], input[type="checkbox"] {
+  width: unset;
+  height: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+/* Adjust textarea height */
+textarea {
+  height: 8em;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  min-width: 300px;
+  margin: 1em auto 0 auto;
+  padding: 0;
+  height: 2em;
+  background-color: #6495ED;
+  color: #EBEBEB;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+/* Style for footer */
+footer {
+  padding: 2em 0;
+  text-align: center;
+}
+
+/* Link styles */
+a, a:visited {
+  color: #EBEBEB;
+}
+
+/* Hover and active link styles */
+a:hover, a:active {
+  color: #6495ED;
+}
