@@ -4,9 +4,9 @@
 
 /* Reset some default styles for the body */
 body {
-  width: 100%;
+  width: 90%;
   height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   color: #EBEBEB;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.1rem;
