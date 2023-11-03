@@ -11,17 +11,94 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     font-weight: 300;
-  }
+}
 
+/* HEAD */
 
+/* Define styles for main content, and footer */
+main, footer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    min-width: 300px;
+}
+
+/* Style for main heading */
 #title {
     font-family: 'Mulish', sans-serif;
-    /* font-weight: 800; */
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style for paragraphs inside the header */
+body > main > p:first-of-type {
+    font-weight: 400;
+    text-align: center;
+}
+
+figure {
+    display: block;
+    border-radius: 0.5rem;
+    margin: 70px auto;
+    padding: 2em;
+    background-color: azure;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 #image {
     display: block;
     max-width: 100%;
     height: auto;
+    margin: 0 auto 2em auto;
+}
+
+/* BODY */
+
+section {
     margin: 0 auto;
+    padding: 0;
+}
+
+section div {
+    width: 75%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    padding: 0;
+    margin-bottom: 2.5em;
+}
+
+section div h3 {
+    /* margin-bottom: -10px; */
+}
+
+section div p {
+    text-align: justify;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* FOOTER */
+
+/* Style for footer */
+footer {
+  padding: 2em 0;
+  border-top: 1px solid #ffffff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Link styles */
+a, a:visited {
+  color: #6495ED;
+}
+
+/* Hover and active link styles */
+a:hover, a:active {
+  color: #6495ED;
 }
