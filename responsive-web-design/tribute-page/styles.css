@@ -1,4 +1,4 @@
-/* Import Google Fonts */
+/* Import Google Fonts for Mulish and Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
 
 /* Reset some default styles for the body */
@@ -6,7 +6,7 @@ body {
     width: 90%;
     height: 100vh;
     margin: 0 auto;
-    background-color: rgb(236, 240, 243);
+    background-color: rgb(242, 243, 236);
     color: rgb(53, 55, 69);
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
@@ -15,7 +15,7 @@ body {
 
 /* HEAD */
 
-/* Define styles for main content, and footer */
+/* Define styles for main content and footer */
 main, footer {
     margin: 0 auto;
     width: 100%;
@@ -23,7 +23,7 @@ main, footer {
     min-width: 300px;
 }
 
-/* Style for main heading */
+/* Style for the main heading */
 #title {
     font-family: 'Mulish', sans-serif;
     font-weight: 700;
@@ -37,26 +37,31 @@ body > main > p:first-of-type {
     text-align: center;
 }
 
+/* Styles for figure along with image and caption */
 figure {
     display: block;
     border-radius: 0.5rem;
     margin: 70px auto;
     padding: 2em;
     background-color: azure;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
 }
 
 #image {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0 auto 2em auto;
+}
+
+#img-caption {
+    margin-top: 2em;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 /* BODY */
 
+/* Styles for textual content describing the subject of the tribute page */
 section {
     margin: 0 auto;
     padding: 0;
@@ -65,13 +70,12 @@ section {
 section div {
     width: 75%;
     margin: 0 auto;
-    /* border: 1px solid black; */
     padding: 0;
     margin-bottom: 2.5em;
 }
 
 section div h3 {
-    /* margin-bottom: -10px; */
+    margin-bottom: -5px;
 }
 
 section div p {
@@ -85,20 +89,20 @@ h5 {
 
 /* FOOTER */
 
-/* Style for footer */
+/* Style for the footer */
 footer {
-  padding: 2em 0;
-  border-top: 1px solid #ffffff;
-  text-align: center;
-  font-size: 1rem;
+    padding: 2em 0;
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    font-size: 1rem;
 }
 
 /* Link styles */
 a, a:visited {
-  color: #6495ED;
+    color: #6495ED;
 }
 
 /* Hover and active link styles */
 a:hover, a:active {
-  color: #6495ED;
+    color: #6495ED;
 }
