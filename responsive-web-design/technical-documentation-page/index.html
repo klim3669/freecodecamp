@@ -11,69 +11,81 @@
             <header>HTML Documentation</header>
             <ul>
                 <li>
-                    <a class="nav-link" href="#Topic_1">Topic 1</a>
+                    <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Topic_2">Topic 2</a>
+                    <a class="nav-link" href="#What_is_HTML">What is HTML?</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Topic_3">Topic 3</a>
+                    <a class="nav-link" href="#HTML_text_fundamentals">HTML text fundamentals</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Topic_4">Topic 4</a>
+                    <a class="nav-link" href="#Creating_hyperlinks">Creating hyperlinks</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Topic_5">Topic 5</a>
+                    <a class="nav-link" href="#Adding_a_title">Adding a title</a>
                 </li>
             </ul>
         </nav>
         <main id="main-doc">
-            <section class="main-section" id="Topic_1">
+            <section class="main-section" id="Introduction_to_HTML">
                 <header>
-                    Topic 1
+                    Introduction to HTML
                 </header>
-                <p></p>
-                <code></code>
-                <p></p>
+                <p>At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. This module will introduce the first two of these and introduce fundamental concepts and syntax you need to know to understand HTML.</p>
+            </section>
+            <section class="main-section" id="What_is_HTML">
+                <header>
+                    What is HTML?
+                </header>
+                <p>HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:</p>
+                <code>My cat is very grumpy</code>
+                <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph element:</p>
+                <code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code>
+                <p>Tags in HTML are not case-sensitive. This means they can be written in uppercase or lowercase. For example, a &lt;title&gt; tag could be written as &lt;title&gt;, &lt;TITLE&gt;, &lt;Title&gt;, &lt;TiTlE&gt;, etc., and it will work. However, it is best practice to write all tags in lowercase for consistency and readability.</p>
+                <p>Let's further explore our paragraph element from the previous section. The anatomy of our element is:</p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><b>The opening tag:</b> This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+                    <li><b>The content:</b> This is the content of the element. In this example, it is the paragraph text.</li>
+                    <li><b>The closing tag:</b> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
                 </ul>
             </section>
-            <section class="main-section" id="Topic_2">
+            <section class="main-section" id="HTML_text_fundamentals">
                 <header>
-                    Topic 2
+                    HTML text fundamentals
                 </header>
-                <p></p>
-                <code></code>
-                <p></p>
+                <p>One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.</p>
+                <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.</p>
+                <p>In HTML, each paragraph has to be wrapped in a &lt;p&gt; element, like so:</p>
+                <code>&lt;p&gt;I am a paragraph, oh yes I am.&lt;/p&gt;</code>
+                <p>Each heading has to be wrapped in a heading element:</p>
+                <code>&lt;h1&gt;I am the title of the story.&lt;/h1&gt;</code>
+                <p>There are six heading elements: h1, h2, h3, h4, h5, and h6. Each element represents a different level of content in the document; &lt;h1&gt; represents the main heading, &lt;h2&gt; represents subheadings, &lt;h3&gt; represents sub-subheadings, and so on.</p>
             </section>
-            <section class="main-section" id="Topic_3">
+            <section class="main-section" id="Creating_hyperlinks">
                 <header>
-                    Topic 3
+                    Creating hyperlinks
                 </header>
-                <p></p>
-                <code></code>
-                <p></p>
+                <p>Hyperlinks are really important — they are what makes the Web a web. This article shows the syntax required to make a link, and discusses link best practices.</p>
+                <p>Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of the Web since the beginning, and are what makes the Web a web. Hyperlinks allow us to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web address (URL).</p>
+                <p>A basic link is created by wrapping the text or other content inside an &lt;a&gt; element and using the <b><i>href</i></b> attribute, also known as a <b>Hypertext Reference</b>, or <b>target</b>, that contains the web address.</p>
+                <code>
+                    &lt;p&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;I'm creating a link to<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="https://www.mozilla.org/en-US/"&gt;the Mozilla homepage&lt;/a&gt;.<br>
+                    &lt;/p&gt;
+                </code>
             </section>
-            <section class="main-section" id="Topic_4">
+            <section class="main-section" id="Adding_a_title">
                 <header>
-                    Topic 4
+                    Adding a title
                 </header>
-                <p></p>
-                <code></code>
-                <p></p>
-            </section>
-            <section class="main-section" id="Topic_5">
-                <header>
-                    Topic 5
-                </header>
-                <p></p>
-                <code></code>
-                <p></p>
+                <p>We've already seen the &lt;title&gt; element in action — this can be used to add a title to the document. This however can get confused with the h1 element, which is used to add a top level heading to your body content — this is also sometimes referred to as the page title. But they are different things!</p>
+                <ul>
+                    <li>The h1 element appears on the page when loaded in the browser — generally this should be used once per page, to mark up the title of your page content (the story title, or news headline, or whatever is appropriate to your usage.)</li>
+                    <li>The &lt;title&gt; element is metadata that represents the title of the overall HTML document (not the document's content.)</li>
+                </ul>
+                <p>The &lt;title&gt; element contents are also used in other ways. For example, if you try bookmarking the page (Bookmarks > Bookmark This Page or the star icon in the URL bar in Firefox), you will see the &lt;title&gt; contents filled in as the suggested bookmark name.</p>
             </section>
         </main>
     </body>
